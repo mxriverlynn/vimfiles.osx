@@ -7,5 +7,5 @@ homedir = os.path.expanduser("~")
 files = (".vimrc", ".vim")
 
 for file in files:
-  os.system("mv " + file + " " + file + ".bak")
+  os.system("mv " + homedir + "/" + file + " " + homedir + "/" + file + ".bak")
   os.system("ln -s " + vimdir + "/" + file + " " + homedir + "/" + file)
